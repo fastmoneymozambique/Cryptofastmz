@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.form-container, .about-container {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: rotateY(15deg);
+    transition: transform 0.5s;
+    max-width: 600px;
+}
+
+.form-container:hover, .about-container:hover {
+    transform: rotateY(0);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #FFD700;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.whatsapp-button {
+    background: #25D366;
+    color: white;
+    margin-top: 10px;
+}
+
+.whatsapp-button:hover {
+    background: #1EBB5A;
+}
+
+.about-button {
+    background: #FFD700;
+    color: black;
+}
+
+.about-button:hover {
+    background: #FFC107;
+}
+
+.about-container {
+    display: none;
+    flex-direction: column;
+}
+
+.about-container p {
+    margin: 10px 0;
+}
